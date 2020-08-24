@@ -1,0 +1,12 @@
+<!--http://pics.images.ac.cn/image/5ef8442fb6934.html-->
+<!-- image标签 
+     src 指定要加载的图片的路径
+         图片存在默认的高度和宽度 分别是 320 * 240   原图大小是200 * 100
+     mode 决定图片内容 如何 和 图片标签 宽高 做 适配
+         1 scaleToFill 默认值 不保持纵横比缩放图片，使图片的宽高完全拉伸至填满 image 元素
+         2 aspectFit 保持宽高比 确保图片的长边 显示出来 一般用于页面轮播图 常用   
+         3 aspectFill 保持宽高比 确保图片的短边 显示出来 
+         4 widthFix 宽度不变 以前web的图片 宽度指定了之后 高度 会自己按比例来调整 常用
+     懒加载图片 lazy-load 会自己判断 ，当图片出现在视口的上下(三屏)的高度之内 自己开始加载图片     
+-->
+<image src="http://pics.images.ac.cn/image/5ef8442fb6934.html" mode="widthFix" lazy-load="{{true}}"/>

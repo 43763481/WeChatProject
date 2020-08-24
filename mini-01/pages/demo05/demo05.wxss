@@ -1,0 +1,15 @@
+/* 
+   1 小程序中 不需要主动来引入样式文件
+   2 需要把页面中的某些元素的单位由 px 转为 rpx
+   设计稿750px
+       0.5 px = 1rpx
+   calc : 750和rpx中不要留空格    ，运算符两边要留空格
+
+ */
+
+ view{
+   width: calc(750rpx * 100 / 375);
+   height: 200rpx;
+   font-size: 40rpx;
+   background-color: aqua;
+}

@@ -1,0 +1,45 @@
+<!--pages/demo03/demo03.wxml-->
+<!-- text标签相当于Web中的span标签 
+     view标签相当于div标签
+-->
+<!-- 字符串 -->
+<view>{{msg}}</view>
+<!-- 数字 -->
+<view>{{num}}</view>
+
+<!-- 列表循环 wx:key 绑定一个普通的字符串的时候 那么这个字符串的名称 肯定是
+         循环数组 中 对象的 唯一属性-->
+<view wx:for="{{list}}" wx:for-item="item" wx:for-index="index"
+      wx:key="id">
+    索引: {{index}}
+    --
+    值: {{item.id}} : {{item.name}}
+</view>
+
+<!-- 对象循环 不写wx:for-item默认属性名 wx:for-index默认属性值-->
+<view wx:for="{{person}}" wx:key="name">
+     属性 : {{index}}
+     --
+     值: {{item}}  
+</view>
+  
+<!-- block标签 1 占位符的标签
+               2 写代码时 可以看到这标签存在
+               3 页面渲染 小程序会把它移出掉  -->  
+<block wx:for="{{list}}" wx:for-item="item" wx:for-index="index"
+      wx:key="id" class="my_list">
+    索引: {{index}}
+    --
+    值: {{item.id}} : {{item.name}}
+</block>
+
+<!-- 条件渲染 -->
+<view>
+  <view>条件渲染</view>
+  <view wx:if="{{true}}">显示</view>
+  <view wx:if="{{false}}">隐藏</view>
+
+  <view wx:if="{{false}}">1</view>
+  <view wx:elif="{{false}}">2</view>
+  <view wx:else> 3 </view>
+</view>

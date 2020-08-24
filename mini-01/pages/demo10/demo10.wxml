@@ -1,0 +1,19 @@
+<!--  
+    1 轮播图外层容器 swiper
+    2 每一个轮播项 swiper-item 
+    3 swiper标签 存在默认样式
+       1 width 100%
+       2 height 150px   image 存在默认宽度和高度 320 * 240
+       3 swiper 高度 无法实现由内容撑开
+    4 先找出来 原图的宽度和高度 等比例 给swiper 定 宽度和高度
+    5 autoplay 自动轮播
+    6 interval 修改轮播时间   
+    7 circular 是否循环衔接轮播   
+    8 indicator-dots 显示 指示器 分页器 索引器
+    9 indicator-color 指示器未选中颜色 
+    10 indicator-active-color 指示器选中时的颜色
+-->
+<swiper autoplay interval="2000" circular indicator-dots indicator-color="#0094ff" indicator-active-color="#ff0094">
+   <swiper-item><image mode="widthFix" src="//gw.alicdn.com/tps/i2/TB1nmqyFFXXXXcQbFXXE5jB3XXX-114-114.png"/></swiper-item>
+   <swiper-item><image mode="widthFix" src="//img.alicdn.com/tps/i3/T1OjaVFl4dXXa.JOZB-114-114.png"/></swiper-item>
+</swiper>

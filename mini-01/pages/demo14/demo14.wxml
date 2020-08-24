@@ -1,0 +1,33 @@
+<!-- icon 小程序中的图标 
+       type 图标类型 success|success_no_circle|info|warn|waiting|cancel|download|search|clear
+       size 图标大小
+       color 图标颜色
+-->
+<icon  type="success" size="23" color="#0094ff"></icon>
+<icon  type="cancel" size="23" color="#0094ff"></icon>
+
+<!-- radio 单选框标签
+      radio标签 必须要和 父元素 radio-group 来使用
+         1 value 选中的单选框的值   
+ -->
+<radio-group bindchange="handleChange">
+   <radio value="male">男</radio>
+   <radio value="female">女</radio>
+</radio-group>  
+  
+<view>您选中的是:{{gender}}</view>  
+
+<!-- 
+   checkbox 复选框标签  
+ -->
+ <view>
+    <checkbox-group bindchange="handleItemChange">
+        <checkbox value="{{item.value}}" wx:for="{{list}}" wx:key="id" >
+           {{item.name}}
+        </checkbox>
+    </checkbox-group>
+    <view>
+        选中的水果:{{checkedList}}
+    </view>
+ </view>
+ 

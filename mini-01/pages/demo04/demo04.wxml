@@ -1,0 +1,8 @@
+<!--pages/demo04/demo04.wxml-->
+<!-- 双向绑定案例 -->
+<!-- bindinput相当于给input标签绑定一个事件 -->
+<input type="text" bindinput="handleInput"></input>
+<button bindtap="handletap" data-operation="{{1}}">+</button>
+<button bindtap="handletap" data-operation="{{-1}}">-</button>
+<view>{{num}}</view>
+  

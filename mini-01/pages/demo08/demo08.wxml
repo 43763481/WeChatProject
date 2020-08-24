@@ -1,0 +1,7 @@
+<!--text标签 
+    selectable : 长按文字复制 
+     decode  对文本内容解码，实现把&nbsp转为空格
+-->
+<text selectable="{{true}}" decode="{{true}}">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;&nbsp;1
+</text>

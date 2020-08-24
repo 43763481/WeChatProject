@@ -1,0 +1,17 @@
+<!-- 导航组件 navigator (块级组件 默认会换行)
+    1 url 要跳转的页面路径 绝对路径 相对路径
+    2 target 要跳转到当前的小程序还是其他的小程序页面
+          self (默认值，指当前小程序)
+          miniProgram 其他小程序
+    3 open-type 跳转的方式  
+        navigat(默认值) 保留当前页面 跳转到应用内某个界面 但是不能跳到tabbr页面	      
+        redirect 不保留当前页面 跳转到应用内某个界面 但是不能跳到tabbr页面	
+        switchTab 跳转到tabbr页面 并关闭所有非tabbr页面
+        reLaunch 关闭所有页面 直接到应用内某个页面
+
+ -->
+<navigator url="/pages/demo10/demo10"> 轮播图页面 </navigator>
+<navigator url="/pages/index/index"> 直接跳转到tabbr页面 </navigator> <!-- tabbr不能跳转 -->
+<navigator open-type="redirect" url="/pages/demo10/demo10"> redirect轮播图页面 </navigator>
+<navigator open-type="switchTab" url="/pages/index/index"> switchTab 直接跳转到tabbr页面 </navigator>
+<navigator open-type="reLaunch" url="/pages/index/index"> reLaunch 直接跳转到tabbr页面 </navigator>
